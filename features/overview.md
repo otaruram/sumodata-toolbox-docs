@@ -145,4 +145,4 @@ All tools respect your configuration:
 
 - [Get started with installation →](/guide/installation)
 - [Learn basic usage →](/guide/basic-usage)
-- [Explore use cases by role →](/features/use-case-de)
+- [View advanced tips →](/guide/advanced-tips)
