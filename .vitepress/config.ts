@@ -4,6 +4,9 @@ export default defineConfig({
   title: 'SumoData Toolbox',
   description: 'AI-powered tools for Data Engineers, Analysts, and ML Engineers',
   base: '/sumodata-toolbox-docs/',
+  head: [
+    ['link', { rel: 'icon', href: '/sumodata-toolbox-docs/favicon.ico' }]
+  ],
   
   themeConfig: {
     logo: '/logo.svg',
