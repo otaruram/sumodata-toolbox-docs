@@ -20,6 +20,11 @@ hero:
       link: https://github.com/yourusername/sumodata-toolbox
 
 features:
+  - icon: 🔥
+    title: Data Quality Auditor (NEW)
+    details: Multi-file code analysis - Detect critical issues, performance problems, and anti-patterns automatically
+    link: /features/overview#data-quality-auditor
+  
   - icon: 📂
     title: Sumo Pipes
     details: Data Engineering tools - SQL optimization, schema generation, and cron expressions
@@ -35,6 +40,10 @@ features:
     details: DS/ML tools - Auto-docstrings, type hints, and ML training boilerplate
     link: /features/sumo-core
   
+  - icon: 📁
+    title: Multi-File Mode
+    details: Analyze multiple files simultaneously for comprehensive code quality audits
+  
   - icon: ⚡
     title: Token Efficient
     details: Minimalist prompts that save tokens and get straight to the point
@@ -46,6 +55,30 @@ features:
   - icon: 🎯
     title: One-Click Actions
     details: No chatty AI - just quick, focused results for your selected code
+---
+
+## 🔥 NEW: Data Quality Auditor
+
+**Automatically scan multiple files for data quality issues, performance problems, and anti-patterns!**
+
+The killer feature that sets SumoData Toolbox apart - comprehensive code quality analysis specifically designed for data professionals.
+
+### What It Detects
+
+- ❌ **Critical Issues**: Missing error handling, type safety problems, data validation gaps
+- ⚡ **Performance Warnings**: Inefficient loops, memory issues, slow operations  
+- 💡 **Best Practices**: Code style, documentation, maintainability improvements
+
+### Why It's Different
+
+Unlike generic linters, it understands data workflows:
+- Pandas anti-patterns and vectorization opportunities
+- SQL performance issues and missing indexes
+- Data validation gaps that cause production crashes
+- ML code quality and best practices
+
+[Learn more about Data Quality Auditor →](/features/overview#data-quality-auditor)
+
 ---
 
 ## Why SumoData Toolbox?

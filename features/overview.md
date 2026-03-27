@@ -1,6 +1,70 @@
 # Features Overview
 
-SumoData Toolbox provides 9 powerful tools organized into 3 categories, each designed for specific data workflows.
+SumoData Toolbox provides 10 powerful tools organized into 3 categories, plus a killer feature for comprehensive code quality auditing.
+
+## 🔥 NEW: Data Quality Auditor (Killer Feature)
+
+**Comprehensive multi-file code analysis for data professionals**
+
+The Data Quality Auditor is a game-changing feature that automatically scans your Python and SQL files for issues that could cause production failures, performance problems, or maintainability headaches.
+
+### What It Does
+
+- 🔍 **Multi-File Analysis**: Select and analyze multiple files simultaneously
+- ❌ **Critical Issue Detection**: Missing error handling, type safety problems, data validation gaps
+- ⚡ **Performance Warnings**: Inefficient loops, memory issues, slow operations
+- 💡 **Best Practice Suggestions**: Code style, documentation, maintainability improvements
+
+### Why It's Powerful
+
+Unlike generic linters, the Data Quality Auditor understands data engineering and ML workflows:
+
+- Detects pandas anti-patterns (inefficient loops, memory issues)
+- Identifies SQL performance problems (missing indexes, cartesian products)
+- Catches data validation gaps that cause production crashes
+- Provides specific, actionable fixes with line numbers
+
+### Example Output
+
+```markdown
+## 🔍 Data Quality Audit Report
+
+### ⚠️ Critical Issues (3 found)
+- Reading CSV without error handling - Line 13
+  - Impact: correctness/reliability (will crash on missing file)
+  - Fix: wrap pd.read_csv in try/except, validate file existence
+
+### ⚡ Performance Warnings (3 found)
+- Inefficient Python loop (can be vectorized) - Lines 4-9
+  - Impact: medium for large lists
+  - Fix: use list comprehension or numpy vectorization
+
+### 💡 Best Practice Suggestions (6 found)
+- Add type hints and docstrings - Lines 1-2
+  - Recommendation: annotate parameters/returns
+
+### ✅ Summary
+- Total issues: 12 (3 Critical, 3 Performance, 6 Best Practice)
+- Estimated performance impact: Medium-High
+- Recommended priority: High
+```
+
+### Use Cases
+
+1. **Pre-Commit Reviews**: Catch issues before they reach production
+2. **Legacy Code Cleanup**: Identify technical debt in old codebases
+3. **Team Onboarding**: Help new members understand quality standards
+4. **Performance Optimization**: Find bottlenecks across multiple files
+5. **Production Readiness**: Ensure code meets reliability standards
+
+### How to Use
+
+1. Enable "📁 Multi-File Mode" in the sidebar
+2. Click "🔍 Run Quality Audit"
+3. Select files to analyze (Python, SQL, or both)
+4. Review comprehensive report with actionable fixes
+
+---
 
 ## 🎯 Philosophy
 
