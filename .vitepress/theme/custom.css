@@ -1,0 +1,55 @@
+:root {
+  --vp-c-brand: #00d4ff;
+  --vp-c-brand-light: #4de4ff;
+  --vp-c-brand-lighter: #80ebff;
+  --vp-c-brand-dark: #00a8cc;
+  --vp-c-brand-darker: #007a99;
+}
+
+.dark {
+  --vp-c-bg: #0a0e1a;
+  --vp-c-bg-soft: #141824;
+}
+
+/* Hero customization */
+.VPHero .name {
+  background: linear-gradient(120deg, #00d4ff 0%, #0099ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Feature cards */
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.1);
+}
+
+/* Code blocks */
+.vp-code-group {
+  margin: 1.5rem 0;
+}
+
+/* Custom badges */
+.custom-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-new {
+  background: linear-gradient(120deg, #00d4ff 0%, #0099ff 100%);
+  color: white;
+}
+
+.badge-beta {
+  background: #ffa500;
+  color: white;
+}
